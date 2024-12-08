@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.auth-container, .home-container, .quiz-container {
+    margin: auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#timer {
+    font-weight: bold;
+    color: red;
+}

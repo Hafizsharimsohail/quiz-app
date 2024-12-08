@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Signup and Login Page -->
+     <div id="authPage" class="auth-container">
+        <h2 id="authTitle">Signup</h2>
+        <form id="authForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Signup</button>
+        </form>
+        <p id="switchToLogin">Already have an account? <span onclick="switchToLogin()">Login</span></p>
+    </div>
+
+    <!-- Home Page -->
+    <div id="homePage" class="home-container" style="display: none;">
+        <h2>Welcome to the Quiz App</h2>
+        <div id="topicCards" class="card-container">
+            <div class="card" id="htmlCard">
+                <h3>HTML Quiz</h3>
+                <button onclick="startQuiz('html')">Start Quiz</button>
+            </div>
+            <div class="card" id="cssCard">
+                <h3>CSS Quiz</h3>
+                <button onclick="startQuiz('css')">Start Quiz</button>
+            </div>
+            <div class="card" id="jsCard">
+                <h3>JavaScript Quiz</h3>
+                <button onclick="startQuiz('js')">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" class="quiz-container" style="display: none;">
+        <h3 id="quizTopic">Quiz Topic</h3>
+        <div id="quizQuestion"></div>
+        <div id="quizOptions"></div>
+        <p id="timer">Time Left: 60</p>
+        <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
